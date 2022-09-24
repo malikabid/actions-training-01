@@ -12,15 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print Date on Ubunut
-        run: echo date
+      - name: Print Date on Ubuntu
+        run: date
   job2:
     name: windows date job
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print Date on Ubunut
+      - name: Print Date on Windows
         run: Get-Date
 
   job3:
@@ -29,8 +29,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print Date on Ubunut
-        run: echo date
+      - name: Print Date on Mac Os
+        run: date
   job4:
     name: Final Jobs
     needs: [job1, job2, job3]
